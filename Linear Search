@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n,search,i;
+    int flight[10];
+
+    cout << "Enter The Numbers Of Flights : ";
+    cin >> n;
+
+    cout << "Enter Flight Numbers : " << endl ;
+    for( i=0; i<n ; i++)
+    {
+        cin >> flight[i];
+    }
+
+    cout << "Enter Flight Number To Search : ";
+    cin >> search;
+
+    for( i=0; i<n ; i++)
+    {
+        if(flight[i]== search)
+        {
+            cout << "Flights Number Found At Position : " << i+1;
+            return 0;
+        }
+        cout << "Flight Number Not Found";
+    }
+    return 0;
+}
